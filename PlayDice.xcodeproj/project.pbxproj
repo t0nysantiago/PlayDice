@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		EA6618E72B1E7DA500FD05BE /* PlayDiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6618E62B1E7DA500FD05BE /* PlayDiceApp.swift */; };
-		EA6618E92B1E7DA500FD05BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6618E82B1E7DA500FD05BE /* ContentView.swift */; };
+		EA6618E92B1E7DA500FD05BE /* PlayDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6618E82B1E7DA500FD05BE /* PlayDiceView.swift */; };
 		EA6618EB2B1E7DA700FD05BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6618EA2B1E7DA700FD05BE /* Assets.xcassets */; };
 		EA6618EE2B1E7DA700FD05BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6618ED2B1E7DA700FD05BE /* Preview Assets.xcassets */; };
+		EA6618F82B1E836800FD05BE /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6618F72B1E836800FD05BE /* DiceView.swift */; };
+		EA6618FC2B1E87B500FD05BE /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6618FB2B1E87B500FD05BE /* HexColor.swift */; };
+		EA6618FE2B1E98DB00FD05BE /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6618FD2B1E98DB00FD05BE /* Dice.swift */; };
+		EA6619002B1E990100FD05BE /* DiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6618FF2B1E990100FD05BE /* DiceViewModel.swift */; };
+		EA6619022B1E9A9700FD05BE /* StyledButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6619012B1E9A9700FD05BE /* StyledButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA6618E32B1E7DA500FD05BE /* PlayDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6618E62B1E7DA500FD05BE /* PlayDiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayDiceApp.swift; sourceTree = "<group>"; };
-		EA6618E82B1E7DA500FD05BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA6618E82B1E7DA500FD05BE /* PlayDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayDiceView.swift; sourceTree = "<group>"; };
 		EA6618EA2B1E7DA700FD05BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA6618ED2B1E7DA700FD05BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA6618F72B1E836800FD05BE /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
+		EA6618FB2B1E87B500FD05BE /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		EA6618FD2B1E98DB00FD05BE /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		EA6618FF2B1E990100FD05BE /* DiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewModel.swift; sourceTree = "<group>"; };
+		EA6619012B1E9A9700FD05BE /* StyledButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,11 @@
 		EA6618E52B1E7DA500FD05BE /* PlayDice */ = {
 			isa = PBXGroup;
 			children = (
+				EA6618FA2B1E879D00FD05BE /* Utils */,
+				EA6618F62B1E7DC200FD05BE /* Model */,
+				EA6618F52B1E7DBC00FD05BE /* ViewModel */,
+				EA6618F42B1E7DB400FD05BE /* View */,
 				EA6618E62B1E7DA500FD05BE /* PlayDiceApp.swift */,
-				EA6618E82B1E7DA500FD05BE /* ContentView.swift */,
 				EA6618EA2B1E7DA700FD05BE /* Assets.xcassets */,
 				EA6618EC2B1E7DA700FD05BE /* Preview Content */,
 			);
@@ -65,6 +78,48 @@
 				EA6618ED2B1E7DA700FD05BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA6618F42B1E7DB400FD05BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA6618F92B1E837300FD05BE /* Components */,
+				EA6618E82B1E7DA500FD05BE /* PlayDiceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA6618F52B1E7DBC00FD05BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA6618FF2B1E990100FD05BE /* DiceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA6618F62B1E7DC200FD05BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA6618FD2B1E98DB00FD05BE /* Dice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA6618F92B1E837300FD05BE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EA6618F72B1E836800FD05BE /* DiceView.swift */,
+				EA6619012B1E9A9700FD05BE /* StyledButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EA6618FA2B1E879D00FD05BE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA6618FB2B1E87B500FD05BE /* HexColor.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA6618E92B1E7DA500FD05BE /* ContentView.swift in Sources */,
+				EA6618E92B1E7DA500FD05BE /* PlayDiceView.swift in Sources */,
+				EA6618FC2B1E87B500FD05BE /* HexColor.swift in Sources */,
+				EA6618FE2B1E98DB00FD05BE /* Dice.swift in Sources */,
+				EA6619002B1E990100FD05BE /* DiceViewModel.swift in Sources */,
+				EA6618F82B1E836800FD05BE /* DiceView.swift in Sources */,
+				EA6619022B1E9A9700FD05BE /* StyledButtonView.swift in Sources */,
 				EA6618E72B1E7DA500FD05BE /* PlayDiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
