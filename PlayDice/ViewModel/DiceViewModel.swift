@@ -14,8 +14,8 @@ class DiceViewModel: ObservableObject {
     @Published var isAnimating: Bool = false
 
     init() {
-        dice1 = Dice(value: 3, color: .red, dotColor: .white)
-        dice2 = Dice(value: 5, color: .white, dotColor: .black)
+        dice1 = Dice(value: 3, color: .init(hex: "#D62828"), dotColor: .init(hex: "#EAE2B7"))
+        dice2 = Dice(value: 5, color: .init(hex: "#FCBF49"), dotColor: .black)
         sumOfDices = dice1.value + dice2.value
     }
 

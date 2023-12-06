@@ -13,14 +13,13 @@ struct StyledButtonView: View {
         ZStack {
             Button(action: viewModel.rollDices) {
                 Text("Play")
+                    .font(.system(size: 20, design: Font.Design.rounded))
                     .fontWeight(.bold)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color(hex: "#EAE2B7"))
                     .padding()
                     .frame(maxWidth: 180)
             }
-            .background(
-                LinearGradient(gradient: Gradient(colors: [Color.red, Color.white]), startPoint: .leading, endPoint: .trailing)
-            )
+            .background(Color(hex: "#F77F00"))
             .cornerRadius(10)
         }
     }

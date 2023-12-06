@@ -12,21 +12,21 @@ struct PlayDiceView: View {
 
     var body: some View {
         ZStack {
-            Color(hex: "#243447").ignoresSafeArea()
+            Color(hex: "#003049").ignoresSafeArea()
             VStack {
                 Text("Play Dice")
-                    .font(.system(size: 40, design: Font.Design.serif))
-                    .foregroundStyle(Color.white)
+                    .font(.system(size: 40, design: Font.Design.rounded))
+                    .foregroundStyle(Color(hex: "#EAE2B7"))
                     .padding(.bottom, 10)
                 
                 Text("The sum of dices is equals to:")
-                    .font(.system(size: 15, design: Font.Design.serif))
-                    .foregroundStyle(Color.white)
+                    .font(.system(size: 15, design: Font.Design.rounded))
+                    .foregroundStyle(Color(hex: "#EAE2B7"))
                     .padding(.bottom, 5)
                 
                 Text(String(viewModel.sumOfDices))
-                    .foregroundStyle(Color.white)
-                    .font(.system(size: 60, design: Font.Design.serif))
+                    .foregroundStyle(Color(hex: "#EAE2B7"))
+                    .font(.system(size: 60, design: Font.Design.rounded))
 
                 ZStack {
                     DiceView(dice: $viewModel.dice1)
